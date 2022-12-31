@@ -10,8 +10,8 @@ console.log(
 // 세미콜론 (semicolons)
 console.log(
   "다음 줄에서 코드를 작성 할 경우, 세미콜론을 붙인 것과 동일합니다."
-)
-console.log("하지만 세미콜론을 명시적으로 추가할 것을 권장합니다.")
+);
+console.log("하지만 세미콜론을 명시적으로 추가할 것을 권장합니다.");
 
 /*
   여러 줄 (multi lines)

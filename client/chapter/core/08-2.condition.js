@@ -28,9 +28,9 @@ let whichTruthy = false || '' || [2,3].length || {thisIsTruthy:true};
 
 let userName = prompt('사용자 아이디를 입력해주세요.','');
 
-if(userName === 'Admin') {
+if(userName?.toLowerCase() === 'admin') {
   let pw = prompt('비밀번호를 입력해주세요.','');
-  if(pw === 'TheMaster'){
+  if(pw?.toLowerCase() === 'themaster'){
     console.log('환영합니다.');
   } else {
     console.log('취소됐습니다.');
