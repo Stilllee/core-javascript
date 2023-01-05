@@ -2,12 +2,10 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": [
-          "comment"
-        ],
+        "scope": ["comment"],
         "settings": {
           "fontStyle": "",
-          "foreground": "#baba61a5"
+          "foreground": ""
         }
       },
       {
@@ -24,6 +22,6 @@
         }
       }
     ],
-    "comments": ""
+    "comments": "#FFD400"
   }
 }
