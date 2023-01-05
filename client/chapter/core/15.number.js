@@ -59,12 +59,12 @@ let pow = Math.pow(2, 53);
 console.log('pow : ', pow);
 
 // 최소, 최대 값 사이 난수 반환 함수
-let getRandomMinMax = () => {};
+let getRandomMinMax = (min, max) => {
+  if (min > max) throw new Error('최솟값은 최댓값보다 작아야 합니다.');
+  return Math.round(Math.random() * (max - min) + min);
+};
 
-Math.round;
-Math.random;
-
-getRandomMinMax(3, 10);
+console.log(getRandomMinMax(3, 10));
 
 /* 진법 ------------------------------------------------------------------ */
 
