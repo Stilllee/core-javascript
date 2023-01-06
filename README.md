@@ -55,3 +55,43 @@
 - [x] Object (Object) [바로가기](https://github.com/simseonbeom/core-javascript/blob/01.core/client/chapter/core/11-1.object.js)
 - [x] Object (copy by reference) [바로가기](https://github.com/simseonbeom/core-javascript/blob/01.core/client/chapter/core/11-2.object.js)
 - [x] Object (Garbage Collection) [바로가기](https://github.com/simseonbeom/core-javascript/blob/01.core/client/chapter/core/11-3.object.js)
+- [x] Object (method and this) [바로가기](https://github.com/simseonbeom/core-javascript/blob/01.core/client/chapter/core/11-4.method.js)
+
+---
+
+### Closure
+
+- [x] closure (basic) [바로가기](https://github.com/simseonbeom/core-javascript/blob/01.core/client/chapter/core/12-1.closure.js)
+- [x] closure (movie) [바로가기](https://github.com/simseonbeom/core-javascript/blob/01.core/client/chapter/core/12-2.closure.js)
+
+---
+
+### OptionalChainning & wrapper
+
+- [x] optionalChainning (basic) [바로가기](https://github.com/simseonbeom/core-javascript/blob/01.core/client/chapter/core/13.optionalChainning.js)
+- [x] wrapper (object wrapper) [바로가기](https://github.com/simseonbeom/core-javascript/blob/01.core/client/chapter/core/14.wrapper.js)
+
+---
+
+### Number
+
+- [x] number (number type) [바로가기](https://github.com/simseonbeom/core-javascript/blob/01.core/client/chapter/core/15.number.js)
+
+---
+
+### String
+
+- [x] string (string type) [바로가기](https://github.com/simseonbeom/core-javascript/blob/01.core/client/chapter/core/16.string.js)
+
+---
+
+### Array
+
+- [x] array (array type) [바로가기](https://github.com/simseonbeom/core-javascript/blob/01.core/client/chapter/core/17.arrayType.js)
+- [x] arrayMethod (method) [바로가기](https://github.com/simseonbeom/core-javascript/blob/01.core/client/chapter/core/18.arrayMethod.js)
+
+---
+
+### 예외처리
+
+- [x] try..catch (try and catch and finally) [바로가기](https://github.com/simseonbeom/core-javascript/blob/01.core/client/chapter/core/18.tryCatch.js)
