@@ -32,8 +32,6 @@
 
 // console.log(second);
 
-console.log();
-
 /* 문서 대상 확인 */
 // - matches
 //            선택자 안에  class || id 를 가지고 있는 대상이 있어?
