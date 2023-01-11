@@ -20,6 +20,9 @@ h1 {
 div {
 }
 
+.first {
+  /* background-color: dodgerblue !important; */
+}
 span {
   display: inline-block;
   transition: all 0.5s;
@@ -27,4 +30,30 @@ span {
 
 span.is-active {
   transform: translateY(-300px);
+}
+
+.ground {
+  width: 600px;
+  height: 400px;
+  background: greenyellow;
+  border: 10px solid black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.visual {
+  padding: 1.5rem;
+  background-color: dodgerblue;
+}
+
+.news {
+  padding: 1rem;
+  background-color: orange;
+}
+
+.desc {
+  padding: 1rem;
+  background-color: hotpink;
 }

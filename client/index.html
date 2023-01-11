@@ -1,28 +1,105 @@
-<!DOCTYPE html>
-<html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script> -->
+/* 
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+*/
 
-    <!-- <script src="./lib/dom/typeOf.js"></script> -->
-    <script src="./lib/dom/getNode.js"></script>
-    <script src="./lib/error/typeError.js"></script>
-    <script src="./lib/dom/attr.js"></script>
-    <script src="./lib/dom/insert.js"></script>
+h1 {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* translate(-50%, -50%) */
+}
 
-    <script defer src="./chapter/dom/04.manipulation.js"></script>
 
-    <title>javascript core</title>
-  </head>
-  <body>
-    <h1>
-      <span class="first">hello</span>
-      <!-- 주석이지롱 -->
+div{
+ 
+}
 
-      <span class="second">world</span>
-    </h1>
-  </body>
-</html>
+.first{
+  /* background-color: dodgerblue !important; */
+}
+span{
+  display: inline-block;
+  transition:all .5s;
+}
+
+span.is-active{
+  transform: translateY(-300px);
+  
+}
+
+
+
+.ground{
+  width: 600px;
+  height: 400px;
+  background: greenyellow;
+  border: 10px solid black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+.ball{
+  transition: all .3s;
+  pointer-events: none;
+}
+
+
+
+.emotion{
+  font-size: 50px;
+  position: absolute;
+  pointer-events: none;
+}
+
+
+
+.visual{
+  padding: 1.5rem;
+  background-color: dodgerblue;
+}
+
+
+.news{
+  padding:1rem;
+  background-color: orange;
+}
+
+.desc{
+  padding: 1rem;
+  background-color: hotpink;
+}
+
+
+
+.pop{
+  width: 30vw;
+  height: 30vw;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
