@@ -1,3 +1,6 @@
+
+import { getNode } from "./getNode.js";
+
 /* 
 
 // IIFE 패턴 
@@ -69,6 +72,8 @@ attr()
 
  */
 
+
+
 function getAttr(node, prop) {
   // node = '.first'
   // prop = 'class'
@@ -102,7 +107,7 @@ function setAttr(node, prop, value) {
 
 // const attr = (node,prop,value) => !value ? getAttr(node,prop) : setAttr(node,prop,value);
 
-function attr(node, prop, value) {
+export function attr(node, prop, value) {
   // if(!value){
   //   return getAttr(node,prop);
   // }else{

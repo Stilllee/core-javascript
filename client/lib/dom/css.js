@@ -1,5 +1,9 @@
 
-function addClass(node,className){
+import { getNode } from "./getNode.js";
+import { typeError, syntaxError } from "../error/index.js";
+
+
+export function addClass(node,className){
   
   if(typeof node === 'string') node = getNode(node);
 
@@ -12,7 +16,7 @@ function addClass(node,className){
 }
 
 // 변경하기 : 대상의 클래스를 지운다.
-function removeClass(node,className){
+export function removeClass(node,className){
   if(typeof node === 'string') node = getNode(node);
 
   if(!className){
@@ -28,7 +32,7 @@ function removeClass(node,className){
 }
 
 
-function toggleClass(node,className){
+export function toggleClass(node,className){
   if(typeof node === 'string') node = getNode(node);
   if(typeof className !== 'string'){
     typeError('toggleClass 함수의 두 번째 인자는 문자 타입 이어야 합니다.');
@@ -36,8 +40,6 @@ function toggleClass(node,className){
 
   node.classList.toggle(className)
 }
-
-
 
 
 
@@ -77,7 +79,7 @@ function setCss(node,prop,value){
 }
 
 
-const css = (node,prop,value) => { 
+export const css = (node,prop,value) => { 
   return !value ? getCss(node,prop) : setCss(node,prop,value) 
 }
 

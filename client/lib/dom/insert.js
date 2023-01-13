@@ -1,4 +1,7 @@
-function insertBefore(node, text) {
+import { getNode } from './getNode.js';
+import { typeError, refError } from '../error/index.js';
+
+export function insertBefore(node, text) {
   if (typeof node === 'string') node = getNode(node);
 
   if (node.nodeType !== document.ELEMENT_NODE) {
@@ -8,15 +11,14 @@ function insertBefore(node, text) {
   node.insertAdjacentHTML('beforebegin', text);
 }
 
-function insertFirst(node, text) {
+export function insertFirst(node, text) {
   if (typeof node === 'string') node = getNode(node);
-  if (node.nodeType !== document.ELEMENT_NODE) typeError('insertFirst 함수의 첫 번째 인자는 ELEMENT 노드여야 합니다.');
+  if (node.nodeType !== document.ELEMENT_NODE)
+    typeError('insertFirst 함수의 첫 번째 인자는 ELEMENT 노드여야 합니다.');
   node.insertAdjacentHTML('afterbegin', text);
 }
 
-
-
-function insertLast(node, text) {
+export function insertLast(node, text) {
   if (typeof node === 'string') node = getNode(node);
   if (node.nodeType !== document.ELEMENT_NODE) {
     refError('insertLast 함수의 첫 번째 인자는 ELEMENT 노드여야 합니다.');
@@ -24,7 +26,7 @@ function insertLast(node, text) {
   node.insertAdjacentHTML('beforeend', text);
 }
 
-function insertAfter(node, text) {
+export function insertAfter(node, text) {
   if (typeof node === 'string') node = getNode(node);
   if (node.nodeType !== document.ELEMENT_NODE) {
     refError('insertAfter 함수의 첫 번째 인자는 ELEMENT 노드여야 합니다.');
