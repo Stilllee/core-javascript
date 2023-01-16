@@ -1,32 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/node,windows,macos,visualstudiocode,ansibletower,webstorm
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,windows,macos,visualstudiocode,ansibletower,webstorm
-
-### AnsibleTower ###
-# Ansible runtime and backups
-*.original
-*.tmp
-*.bkp
-*.retry
-*.*~
-
-# Tower runtime roles
-roles/**
-!roles/requirements.yml
-
-# Avoid plain-text passwords
-*pwd*
-*pass*
-*password*
-*.txt
-
-# Exclude all binaries
-*.bin
-*.jar
-*.tar
-*.zip
-*.gzip
-*.tgz
-
+# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,visualstudiocode,webstorm,node
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,visualstudiocode,webstorm,node
 
 ### macOS ###
 # General
@@ -35,7 +8,8 @@ roles/**
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -130,6 +104,7 @@ web_modules/
 .node_repl_history
 
 # Output of 'npm pack'
+*.tgz
 
 # Yarn Integrity file
 .yarn-integrity
@@ -357,4 +332,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/node,windows,macos,visualstudiocode,ansibletower,webstorm
+# End of https://www.toptal.com/developers/gitignore/api/windows,macos,visualstudiocode,webstorm,node
