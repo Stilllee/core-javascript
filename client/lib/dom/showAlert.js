@@ -1,7 +1,7 @@
 import { getNode } from './getNode.js';
 import { addClass, removeClass } from './css.js';
 
-function showAlert(node, text = '에러입니다.', timeout = 1500) {
+export function showAlert(node, text = '에러입니다.', timeout = 1500) {
   if (typeof node === 'string') node = getNode(node);
   node.textContent = text;
 
@@ -10,5 +10,3 @@ function showAlert(node, text = '에러입니다.', timeout = 1500) {
     removeClass(node, 'is-active');
   }, timeout);
 }
-
-showAlert('.alert', '올바른 정보를 입력해주세요', 3000);
