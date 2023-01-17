@@ -1,11 +1,32 @@
-h1 {
-  width: 100%;
+/* 
+body{
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+} 
+*/
+
+h1 {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* translate(-50%, -50%) */
 }
 
-span {
-  margin-right: 10px;
+.first {
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: all 1s cubic-bezier(0.84, -0.24, 0, 1.14);
 }
+
+/* 
+span{
+  transform: translateY(100px) 
+}
+ */
