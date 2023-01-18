@@ -160,6 +160,7 @@ movePage(
  */
 
 // promise API
+
 const defaultOptions = {
   url: '',
   method: 'GET',
@@ -170,7 +171,7 @@ const defaultOptions = {
   body: null,
 };
 
-export const xhrPromise = (options = {}) => {
+export function xhrPromise(options = {}) {
   const xhr = new XMLHttpRequest();
 
   const { method, url, body, headers } = Object.assign(
@@ -194,19 +195,21 @@ export const xhrPromise = (options = {}) => {
           resolve(JSON.parse(response));
         }
       } else {
-        reject('에러입니다');
+        reject('에러입니다.');
       }
     });
   });
-};
+}
 
-// xhrPromise({ url: "https://jsonplaceholder.typicode.com/users" })
-//   .then((res) => {
-//     console.log(res);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+// xhrPromise({
+//   url:'https://jsonplaceholder.typicode.com/users/1'
+// })
+// .then((res)=>{
+//   console.log(res);
+// })
+// .catch((err)=>{
+//   console.log(err);
+// })
 
 xhrPromise.get = (url) => {
   return xhrPromise({
@@ -214,11 +217,25 @@ xhrPromise.get = (url) => {
   });
 };
 
-xhrPromise
-  .get('www.naver.com')
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((err) => {
-    console.log(err);
+xhrPromise.post = (url, body) => {
+  return xhrPromise({
+    url,
+    body,
+    method: 'POST',
   });
+};
+
+xhrPromise.put = (url, body) => {
+  return xhrPromise({
+    url,
+    body,
+    method: 'PUT',
+  });
+};
+
+xhrPromise.delete = (url) => {
+  return xhrPromise({
+    url,
+    method: 'DELETE',
+  });
+};
